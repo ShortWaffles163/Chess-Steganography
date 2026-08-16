@@ -3,7 +3,6 @@ from chess import pgn, Board
 import io
 
 def get_pgn_games(pgn_string: str):
-    """Robustly extract all games from a PGN string."""
     games = []
     pgn_io = io.StringIO(pgn_string)
     while True:
